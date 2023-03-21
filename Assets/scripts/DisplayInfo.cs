@@ -44,11 +44,17 @@ public class DisplayInfo : MonoBehaviour
 						gui += " type: " + building.type + "\n" + "\n";
 						gui += " Building total intensity: " + Math.Round(double.Parse(building.total_intensity)) + " kWh/m2/yr" + "\n";
 						gui += " Building total electricity: " + Math.Round(double.Parse(building.total_elec)) + " kWh/m2/yr" + "\n";
-						gui += " Building total natural gas: " + Math.Round(double.Parse(building.total_naturalgas)) + " kWh/m2/yr";
+						gui += " Building total natural gas: " + Math.Round(double.Parse(building.total_naturalgas)) + " kWh/m2/yr"+ "\n";
+						gui += " Building total cooling electricity: " + Math.Round(double.Parse(building.cooling_energy)) + " kWh/m2/yr" + "\n";
+						gui += " Building total heating electricity: " + Math.Round(double.Parse(building.heating_energy)) + " kWh/m2/yr" + "\n";
+						gui += " Building total interior lighting: " + Math.Round(double.Parse(building.int_light_elec)) + " kWh/m2/yr" + "\n";
+						gui += " Building total heating natural gas: " + Math.Round(double.Parse(building.heating_ngas)) + " kWh/m2/yr" + "\n";
+						gui += " Building total water systems natural gas: " + Math.Round(double.Parse(building.ws_ngas)) + " kWh/m2/yr";
+
 					}
 			}
 
-			GUI.Box (new Rect (10, 10, 250, 200), gui, style);
+			GUI.Box (new Rect (10, 10, 310, 250), gui, style);
 
 		}
 
