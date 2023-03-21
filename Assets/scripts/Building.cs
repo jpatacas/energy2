@@ -11,5 +11,11 @@ public class Building
     public string total_intensity;
     public string total_elec;
     public string total_naturalgas;
+    public string cooling_energy;
+    public string heating_energy;
+    public string int_light_elec;
+    public string heating_ngas;
+    public string ws_ngas;
+
 }
  
